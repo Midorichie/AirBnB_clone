@@ -76,4 +76,4 @@ Prints all string representation of all instances based or not on the class name
 
 - Authors
 Hammed Yakub hamsohood@gmail.com
-Oluwatobiloba Otun 
+Oluwatobiloba Otun bamidurooluwatobiloba@gmail.com 
