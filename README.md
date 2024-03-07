@@ -20,7 +20,7 @@ Do operations on objects (count, compute stats, etc…)
 Update attributes of an object
 Destroy an object
 Installation
-Git clone the repository https://github.com/khairatAA/AirBnB_clone.git
+Git clone the repository https://github.com/Midorichie/AirBnB_clone.git
 
 Navigate to the cloned repository
 
