@@ -13,12 +13,12 @@ from models.review import Review
 # from models.engine.file_storage import FileStorage
 
 
-class HBNBCommand(cmd, CMD):
+class HBNBCommand(cmd.Cmd):
     """The class that handles the command line interpreter"""
 
     prompt = '(hbnb) '
 
-class_mapping = {
+    class_mapping = {
         'BaseModel': BaseModel,
         'User': User,
         'Place': Place,
@@ -118,7 +118,7 @@ class_mapping = {
         cls_name = args[0]
         instance_id = args[1]
 
-        if cls_name in HBNBCommand.class.mapping:
+        if cls_name in HBNBCommand.class_mapping:
             instance_key = '{}.{}'.format(cls_name, instance_id)
             all_objs = models.storage.all()
 
