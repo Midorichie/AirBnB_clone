@@ -202,12 +202,9 @@ class HBNBCommand(cmd.Cmd):
         attribute_name = args[2]
         attribute_value = args[3]
 
-        attribute_type = type(eval(attribute_value))
-
-        if attribute_type not in (str, int, float):
-            return
-        setattr(all_objs[instance_key], attribute_name, eval(attribute_value))
-        models.storage.save()
+        obj = all_objs[instance_key]
+        setattr(obj, attribute_name, attribute_value)
+        obj.save()
 
     def help_update(self):
         """Thedocumentation for when 'help update' is called"""
